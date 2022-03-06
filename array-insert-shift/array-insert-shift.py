@@ -1,16 +1,13 @@
-def arLength(list):
-  count = 0
-  for i in list:
-    count+= 1
-  return count
-
-def insertShiftArray(list ,length,value):
-  if length%2!=0:
-     length+=1
-  index=int(length/2)
-  list[index:index]=[value]
-  return list
+import math
 
 
-print(insertShiftArray([2,4,6,8],arLength([2,4,6,8]),5))
-print(insertShiftArray([4,8,15,23,42],arLength([4,8,15,23,42]),16))
+def insertShiftArray(arr, val):
+
+    e = math.ceil(len(arr)/2)
+
+    print(arr[:e] + [val] + arr[e:])
+
+    return(arr[:e] + [val] + arr[e:])
+
+
+insertShiftArray([1, 2, 3, 4, 5, 6], 15)

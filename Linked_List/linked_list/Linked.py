@@ -94,9 +94,8 @@ if __name__ == "__main__":
      ll.insert("C")
      ll.insert("B")
      ll.insert("A")
-     ll.append(5)
-     ll.insert_after("e","c")
-     ll.insert_before("y",5)
+     
+     
 
 #print(ll)
 # print(ll.includes("B"))

@@ -1,4 +1,4 @@
-from array_binary_search import __version__
+from linked_list import __version__
 
 
 def test_version():

@@ -3,6 +3,9 @@ class Node:
     def __init__(self, value):
         self.value = value
         self.next = None
+
+   
+        
 """class LinkedList """
 class LinkedList:
 
@@ -32,12 +35,12 @@ class LinkedList:
         if self.head is None:
             output = "Empty linked list"
         else:
-            cur = self.head
-            while(cur):
-                output+= f'{cur.value} -->'
-                cur = cur.next
+            current = self.head
+            while(current):
+                output+= f'{current.value} -->'
+                current = current.next
             
-            output+= "Null"
+            output+= "None"
         return output
 
 
@@ -84,18 +87,40 @@ class LinkedList:
                 cur = cur.next
         else:
             return 'Value is not in the list'
+    
+        """
+        This method  takes a number, k, as a parameter.
+        Return the node’s value that is k from the end of the linked lis
+        """
+    def kthFromEnd(self, k):
+        current = self.head
+
+        length = 0
+        while current is not None:
+            current = current.next
+            length += 1
+
+        if k > length:
+            return "Error - input value is greater than the length of the Linked List"
+        elif k < 0:
+            return "Error - input value is less than 0"
+
+        current = self.head
+        for i in range(1, (length - k)):
+            current = current.next
+        return current
+
+           
 
 
 if __name__ == "__main__":
 
 
      ll =LinkedList()
-
-     ll.insert("C")
-     ll.insert("B")
-     ll.insert("A")
+     ll.insert(5)
+     ll.insert(7)
+     ll.insert(9)
      ll.append(5)
-    
+    #  ll.kthFromEnd(9)
+    #  print(ll)
 
-#print(ll)
-# print(ll.includes("B"))

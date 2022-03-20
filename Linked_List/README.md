@@ -14,10 +14,11 @@ Like arrays, Linked List is a linear data structure. Unlike arrays, linked list 
  
  Create Linked List Kth method  takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list
  
+ Create zip linked list take two list different aparameter Return zip linked List
  
 
 ## Approach & Efficiency
-  takes method insert , check includes, convert to string ,append , Insert Before , Insert after , Linked List Kth
+  takes method insert , check includes, convert to string ,append , Insert Before , Insert after , Linked List Kth , Zip linked list
 
 
 # PR
@@ -27,8 +28,12 @@ Like arrays, Linked List is a linear data structure. Unlike arrays, linked list 
  
  PR Link of linked-list-kth :[PR Kth](https://github.com/hind-hb/data-structures-and-algorithms2/pull/7/commits/64ed582f0ea5d76db310e12497ce9f385d346b9e)
  
+ PR Link of Zip Linked List : [PR List](https://github.com/hind-hb/data-structures-and-algorithms2/pull/8/commits/8dee7fed2b7e2be96569a1e184f5892b9cfb12a4)
+ 
  
  Link of code linked List  : [Link](https://github.com/hind-hb/data-structures-and-algorithms2/tree/linked-list/Linked_List)
+ 
+ 
   
   
  # WhiteBoard 
@@ -36,3 +41,4 @@ Like arrays, Linked List is a linear data structure. Unlike arrays, linked list 
 ![1](https://user-images.githubusercontent.com/75991604/158231248-cf8dc954-8c10-464c-9f7c-e79c4a04b512.jpg)
 ![2](https://user-images.githubusercontent.com/75991604/158231256-be30fa0f-7dd5-44a2-b5af-01c343567f95.jpg)
 ![3](https://user-images.githubusercontent.com/75991604/158468319-754413a0-fab3-4031-aa71-7596aa4244b2.jpg)
+![4](https://user-images.githubusercontent.com/75991604/159163211-18509702-7726-407e-b256-b17333fc0122.jpg)

@@ -66,7 +66,26 @@ def test_k_middll():
     expected = ll.kthFromEnd(1)
     assert expected.value == "ahmad"
 
-
+def test_zip():
+    newList = LinkedList()
+    ll = LinkedList()
+    ll.insert(1)
+    ll.insert(2)
+    ll.insert(3)
+    ll.insert(4)
+    ll.insert(5)
+    ll.insert(6)
+    list1 = LinkedList()
+    list1.insert(2)
+    list1.insert(4)
+    list1.insert(6)
+    list2 = LinkedList()
+    list2.insert(1)
+    list2.insert(3)
+    list2.insert(5)
+    expected = newList.zip_list(list2, list1)
+    actual = '{1}->{2}->{3}->{4}->{5}->{6}->NULL'
+    expected ==  actual
 
 @pytest.fixture
 def ll():

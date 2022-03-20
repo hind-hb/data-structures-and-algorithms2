@@ -110,6 +110,28 @@ class LinkedList:
             current = current.next
         return current
 
+        
+        """zip two list in one list """
+    def zip_list(self,list1,list2):
+        ll = LinkedList()
+        list1_current = list1.head
+        list2_current = list2.head
+        while list1_current != None or list2_current != None :
+            if list1_current != None or list2_current != None :
+                ll.insert(list1_current.value)
+                ll.insert(list2_current.value)
+                list1_current = list1_current.next
+                list2_current = list2_current.next
+            elif list1_current == None :
+                ll.insert(list2_current.value)
+                list2_current = list2_current.next
+            elif list2_current == None :
+                ll.insert(list1_current.value)
+                list1_current = list1_current.next
+
+        return ll
+
+
            
 
 

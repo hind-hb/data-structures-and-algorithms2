@@ -4,32 +4,31 @@ class Node:
         self.value = value
         self.next = None
 
-   
-        
-"""class LinkedList """
+
 class LinkedList:
+    """class LinkedList """
 
     def __init__(self):
         self.head = None
 
+    def insert(self, value):
         """insert value"""
-    def insert(self,value):
-         node = Node(value)
-         if self.head:
-          node.next = self.head
-         self.head = node
+        node = Node(value)
+        if self.head:
+            node.next = self.head
+        self.head = node
 
-    """check include value"""
     def includes(self, value):
-        
-            cur = self.head
-            while cur:
+          """check include value"""
+
+          cur = self.head
+          while cur:
                 if cur.value == value:
                     return True
                 cur = cur.next
-            
-            return False
-    
+
+                return False
+
     def __str__(self):
         output = ""
         if self.head is None:
@@ -37,15 +36,16 @@ class LinkedList:
         else:
             current = self.head
             while(current):
-                output+= f'{current.value} -->'
+                output += f'{current.value} -->'
                 current = current.next
-            
-            output+= "None"
+
+            output += "None"
         return output
 
+    
 
-    """append value"""
     def append(self, value):
+        """append value"""
         if self.head is None:
             self.head = value
 
@@ -54,12 +54,14 @@ class LinkedList:
             while cur.next is not None:
                 cur = cur.next
             cur.next = value
-            
-        """add value immediately before the first node that has the value specified"""
+
+        
+
     def insert_before(self, value, newValue):
+        """add value immediately before the first node that has the value specified"""
         if self.includes(value):
             cur = self.head
-            prev= None
+            prev = None
             while cur:
                 if cur.value == value:
                     node = Node(newValue)
@@ -74,8 +76,10 @@ class LinkedList:
         else:
             return 'Value is not in the list'
 
-        """ Adds a new value  after the Node specified """
+        
+
     def insert_after(self, value, newValue):
+        """ Adds a new value  after the Node specified """
         if self.includes(value):
             cur = self.head
             while cur:
@@ -87,12 +91,14 @@ class LinkedList:
                 cur = cur.next
         else:
             return 'Value is not in the list'
-    
+
+        
+
+    def kthFromEnd(self, k):
         """
         This method  takes a number, k, as a parameter.
         Return the node’s value that is k from the end of the linked lis
         """
-    def kthFromEnd(self, k):
         current = self.head
 
         length = 0
@@ -110,39 +116,34 @@ class LinkedList:
             current = current.next
         return current
 
-        
+       
+    def zip_list(self, list1, list2):
         """zip two list in one list """
-    def zip_list(self,list1,list2):
         ll = LinkedList()
         list1_current = list1.head
         list2_current = list2.head
-        while list1_current != None or list2_current != None :
-            if list1_current != None or list2_current != None :
+        while list1_current != None or list2_current != None:
+            if list1_current != None or list2_current != None:
                 ll.insert(list1_current.value)
                 ll.insert(list2_current.value)
                 list1_current = list1_current.next
                 list2_current = list2_current.next
-            elif list1_current == None :
+            elif list1_current == None:
                 ll.insert(list2_current.value)
                 list2_current = list2_current.next
-            elif list2_current == None :
+            elif list2_current == None:
                 ll.insert(list1_current.value)
                 list1_current = list1_current.next
 
         return ll
 
 
-           
-
-
 if __name__ == "__main__":
 
-
-     ll =LinkedList()
-     ll.insert(5)
-     ll.insert(7)
-     ll.insert(9)
-     ll.append(5)
+    ll = LinkedList()
+    ll.insert(5)
+    ll.insert(7)
+    ll.insert(9)
+    ll.append(5)
     #  ll.kthFromEnd(9)
     #  print(ll)
-

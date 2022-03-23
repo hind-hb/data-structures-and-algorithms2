@@ -28,7 +28,7 @@ Like arrays, Linked List is a linear data structure. Unlike arrays, linked list 
  
  PR Link of linked-list-kth :[PR Kth](https://github.com/hind-hb/data-structures-and-algorithms2/pull/7/commits/64ed582f0ea5d76db310e12497ce9f385d346b9e)
  
- PR Link of Zip Linked List : [PR List](https://github.com/hind-hb/data-structures-and-algorithms2/pull/8/commits/8dee7fed2b7e2be96569a1e184f5892b9cfb12a4)
+ PR Link of Zip Linked List : [PR List](https://github.com/hind-hb/data-structures-and-algorithms2/pull/9/commits/cf1da9505928de3f6ffd9f70fb10cd36e094bf39)
  
  
  Link of code linked List  : [Link](https://github.com/hind-hb/data-structures-and-algorithms2/tree/linked-list/Linked_List)

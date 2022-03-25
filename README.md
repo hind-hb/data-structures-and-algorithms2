@@ -1,8 +1,14 @@
 # data-structures-and-algorithms2
-## Code Challenge 3:
-Binary Search
+## Code Challenge 10:
+Stack and Queue
 ## Challenge:
-Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
-## Approach & Methodology:
+Create a stack and queues classes with methods
+
+pop() - push() - peek()
+
+enqueue - dequeue - peek()
+
+# PR Link : [PR](https://github.com/hind-hb/data-structures-and-algorithms2/pull/10/commits/fe2a8a4fb4215a2c8e783186d8e1d34b55779720)
+# Link : [Link](https://github.com/hind-hb/data-structures-and-algorithms2/tree/stack-and-queue/StackQueue)
 
 

@@ -39,11 +39,11 @@ def test_isEmpty():
 
 
 def test_enqueue_dequeue():
-    ss = PseudoQueue()
-    ss.enqueue("hind")
-    ss.enqueue("ahmad")
-    ss.dequeue()
-    ss.enqueue("hbashneh")
-    ss.dequeue()
-    expected = ss.stack2.top.value
-    assert expected == "hbashneh"
+    queue = PseudoQueue()
+    queue.enqueue(1)
+    queue.enqueue(2)
+    queue.enqueue(5)
+    queue.enqueue(8)
+    assert queue.dequeue() == 1
+    assert queue.dequeue() == 2
+    assert queue.dequeue() == 5

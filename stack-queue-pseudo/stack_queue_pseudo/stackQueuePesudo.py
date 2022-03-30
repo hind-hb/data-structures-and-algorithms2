@@ -52,13 +52,23 @@ class  PseudoQueue():
         """
         dequeue from queue
         """
-        while self.stack1.peek():
-            if self.stack1.top.next == None:
-                return self.stack1.top.value
+        if self.stack2.is_empty():
+          if self.stack1.is_empty():
+            raise IndexError("Can't dequeue from empty ")
+      
+        while not self.stack1.is_empty():
+            last_stack1_item = self.stack1.pop()
+            self.stack2.push(last_stack1_item) 
 
-            else:
-                temp = self.stack1.pop()
-                self.stack2.push(temp)
-                continue
+        return self.stack2.pop()
     
 
+if __name__ =="__main__":
+    q = PseudoQueue()
+    q.enqueue(1)
+    q.enqueue(2)
+    q.enqueue(3)
+    print(q.dequeue())
+    print(q.dequeue())
+    q.enqueue(4)
+    print(q.dequeue())

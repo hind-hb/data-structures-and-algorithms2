@@ -113,23 +113,37 @@ class LinkedList:
         
         """zip two list in one list """
     def zip_list(self,list1,list2):
-        ll = LinkedList()
-        list1_current = list1.head
-        list2_current = list2.head
-        while list1_current != None or list2_current != None :
-            if list1_current != None or list2_current != None :
-                ll.insert(list1_current.value)
-                ll.insert(list2_current.value)
-                list1_current = list1_current.next
-                list2_current = list2_current.next
-            elif list1_current == None :
-                ll.insert(list2_current.value)
-                list2_current = list2_current.next
-            elif list2_current == None :
-                ll.insert(list1_current.value)
-                list1_current = list1_current.next
+        # ll = LinkedList()
+        # list1_current = list1.head
+        # list2_current = list2.head
+        # while list1_current != None or list2_current != None :
+        #     if list1_current != None or list2_current != None :
+        #         ll.insert(list1_current.value)
+        #         ll.insert(list2_current.value)
+        #         list1_current = list1_current.next
+        #         list2_current = list2_current.next
+        #     elif list1_current == None :
+        #         ll.insert(list2_current.value)
+        #         list2_current = list2_current.next
+        #     elif list2_current == None :
+        #         ll.insert(list1_current.value)
+        #         list1_current = list1_current.next
 
-        return ll
+        # return ll
+     def zipLists(self,a,b):
+          cur1, cur2 = a.head, b.head
+          while cur1 and cur2:
+           save1 = cur1.next
+           save2 = cur2.next
+
+           cur1.next = cur2
+           cur2.next = save1
+
+           cur1 = save1
+           cur2 = save2
+
+          return a
+
 
 
            

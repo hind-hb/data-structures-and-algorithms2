@@ -19,3 +19,4 @@ Choice the animal
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
+![animalShelter](https://user-images.githubusercontent.com/75991604/160866020-4b5b2c6a-e87c-409f-92b8-fb27dc549ae6.jpg)

@@ -7,4 +7,6 @@ representing whether or not the brackets in the string are balanced.
 
 ## Whiteboard Process
 
-![bracket](https://user-images.githubusercontent.com/75991604/161599345-8951c557-d4e6-46c5-87f0-9e76296c7fc2.png)
+![bracket](https://user-images.githubusercontent.com/75991604/162463096-0eac92ef-69b5-403f-8809-36f22c077a48.jpg)
+
+

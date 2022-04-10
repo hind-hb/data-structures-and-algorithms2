@@ -52,6 +52,22 @@ class BinaryTree:
             output_post.append(node.value)
         _walk(self.root)
         return output_post
+        
+    def max_value(self):
+        if self.root == None:
+          return 0
+        maximum_value = self.root.value
+        def maximum_value_fun(root):
+          nonlocal maximum_value
+          if root.value > maximum_value:
+              maximum_value = root.value
+          if root.left:
+              maximum_value_fun(root.left)
+          if root.right:
+              maximum_value_fun(root.right)
+          return maximum_value
+        return maximum_value_fun(self.root)
+
 
 class binarySearchTree(BinaryTree):
     '''Search in Tree'''
@@ -78,4 +94,4 @@ class binarySearchTree(BinaryTree):
                         _walk(node.right)
             _walk(self.root)
     
-
+    

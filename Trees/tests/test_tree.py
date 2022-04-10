@@ -1,4 +1,4 @@
-from trees.Tree import   BinaryTree , Node , binarySearchTree
+from trees.Tree import   BinaryTree , Node , binarySearchTree 
 
 
 def test_preOrder():
@@ -49,3 +49,15 @@ def test_bst():
     assert bst.root.left.right.value==-1
     assert bst.root.right.value==10
     assert bst.root.right.right.value==12
+
+def test_max():
+    Bt=BinaryTree()
+    Bt.root=Node(5)
+    Bt.root.left=Node(4)
+    Bt.root.left.left=Node(2)
+    Bt.root.left.right=Node(-1)
+    Bt.root.right=Node(14)
+    Bt.root.right.left=Node(16)
+    Bt.root.right.right=Node(20)
+    actual=Bt.max_value()
+    assert actual==20

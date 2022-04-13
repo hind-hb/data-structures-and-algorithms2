@@ -1,5 +1,5 @@
 # Tree Breadth first
-## PR Link : 
+## PR Link : [PR](https://github.com/hind-hb/data-structures-and-algorithms2/pull/17/commits/1ee001311acb42a6e734e2931ee8d92c35255f37)
 ##  Challenge Summary
  Write a function called breadth first
 Arguments: tree
@@ -22,17 +22,28 @@ return list output
 
 
 ## Solution
---def breadth_first(self):
-        # Traverse the input trempty using a Breadth-first approach
+
+ def breadth_first(self):
             output = []
-            empty = None
+            
+            em = None
             queue = Queue()
+            
             queue.enqueue(self.root)
+            
             while queue.front:
-                empty = queue.dequeue()
-                output.append(empty.value)
-                if empty.left:
-                    queue.enqueue(empty.left)
-                if empty.right:
-                    queue.enqueue(empty.right)
-            return output--
+            
+                em = queue.dequeue()
+                
+                output.append(em.value)
+                
+                if em.left:
+                
+                    queue.enqueue(em.left)
+                    
+                if em.right:
+                
+                    queue.enqueue(em.right)
+                    
+            return output
+            

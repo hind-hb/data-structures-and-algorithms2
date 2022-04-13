@@ -6,7 +6,8 @@ Arguments: tree
 Return: list of all values in the tree, in the order they were encountered
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![Untitled (1)](https://user-images.githubusercontent.com/75991604/163278761-f3c1c0e2-0e62-48e9-9b8e-5cd3a98dceff.jpg)
+
 
 ## Approach & Efficiency
 define function  breadth_first for the class Binarytree taken no arguments and return the values in list 

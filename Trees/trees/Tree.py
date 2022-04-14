@@ -54,7 +54,7 @@ class BinaryTree:
         return output_post
 
 class binarySearchTree(BinaryTree):
-    '''Search in Tree'''
+    '''Search in Tree and retutn nothing '''
     def add(self,value):
            
         if not self.root:
@@ -77,5 +77,31 @@ class binarySearchTree(BinaryTree):
                     else:
                         _walk(node.right)
             _walk(self.root)
+
+    def contains(self,value):
+        
+       # check if the value is contains from Tree and return True or false
+        if not self.root:
+            return False
+            
+        
+        else:
+            def _walk(node):
+              
+                if value == node.value:
+                    return True
+              
+                if value < node.value:
+                    if node.left:
+                        return _walk(node.left)
+                    else:
+                        return False
+               
+                else:
+                    if node.right:       
+                        return _walk(node.right)
+                    else:
+                        return False           
+            return _walk(self.root)
     
 

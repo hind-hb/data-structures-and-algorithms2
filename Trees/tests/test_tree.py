@@ -49,3 +49,14 @@ def test_bst():
     assert bst.root.left.right.value==-1
     assert bst.root.right.value==10
     assert bst.root.right.right.value==12
+
+def test_contains():
+    bst=binarySearchTree()
+    bst.add(2)
+    
+    # bst.add(12)
+    # bst.add(-2)
+    # bst.add(-1)
+    assert bst.contains(2)==True
+    assert bst.contains(3)==False
+   

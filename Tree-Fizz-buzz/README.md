@@ -1,4 +1,5 @@
 # Challenge Summary
+
 - Write a function called FizzBuzzTree which takes a k-ary tree as an argument.
 - Without utilizing any of the built-in methods available to your language, determine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original, but the values modified as follows:
 - If the value is divisible by 3, replace the value with “Fizz”
@@ -9,88 +10,7 @@
 
 
 ## Whiteboard Process
+![code-challange-18](https://user-images.githubusercontent.com/75991604/167315970-114a7da5-db32-4a0f-b331-16de7a873e5a.png)
 
-## Approach & Efficiency
-We need to make sure that code challenge 15 has a Binary Tree implementation, which is a prerequisite for completing this code challenge. 
+# PR : [LINK](https://github.com/hind-hb/data-structures-and-algorithms2/pull/19/commits/5b493af58a7596be64d1d287aaebfd896324ba7e)
 
-## Solution
-
-
-class Node():
-    def __init__(self, value = None):
-        self.value = value
-        self.left = None
-        self.right = None
-
-    def __str__(self):
-        return str(self.value)
-
-class binary_tree():
-    def __init__(self):
-        self.root = None
-        self.output = []
-
-    def pre_order(self, root):
-        # root >> left >> right
-        pre_order_output=[]
-        if root:
-            pre_order_output.append(root.value)
-            pre_order_output = pre_order_output + self.pre_order(root.left)
-            pre_order_output = pre_order_output + self.pre_order(root.right)
-        return pre_order_output
-
-    def in_order(self, root):
-        # left >> root >> right
-        in_order_output=[]
-        if root:
-            in_order_output = self.in_order(root.left)
-            in_order_output.append(root.value)
-            in_order_output = in_order_output + self.in_order(root.right)
-        return in_order_output
-  
-    def post_order(self, root):
-        # left >> right >> root
-        post_order_output=[]
-        if root:
-            post_order_output = self.post_order(root.left)
-            post_order_output = post_order_output + self.post_order(root.right)
-            post_order_output.append(root.value)
-        return post_order_output
-        
-def fizzBuzz(node):
-    if node.value % 15 == 0:
-        return'FizzBuzz'
-    elif node.value %3 == 0:
-        return'Fizz'
-    elif node.value % 5 == 0:
-        return'Buzz'
-    else:
-        return str(node.value)
-
-def FizzBuzzTree(tree):
-    if not tree.root:
-        return []
-    new_binary_tree = binary_tree()
-    def traverser(node):
-        new_binary_tree.output = new_binary_tree.output + [fizzBuzz(node)]
-        if node.left:           
-            traverser(node.left)
-        if node.right:
-            traverser(node.right)
-        return new_binary_tree.output
-    return traverser(tree.root) 
-
-if __name__ == "__main__":
-    bt = binary_tree()
-    bt.root = Node(12)
-    bt.root.left = Node(15)
-    bt.root.right = Node(5)
-    bt.root.left.right = Node(6)
-    bt.root.left.left = Node(8)
-    bt.root.right.right=Node(9)
-    bt.root.right.right.left=Node(4)
-    bt.root.left.left.right=Node(5)
-    bt.root.left.right.left = Node(11)
-    expected = ['Fizz','FizzBuzz','8','Buzz','Fizz','11','Buzz','Fizz','4']
-    actual = FizzBuzzTree(bt)
-    assert expected == actual

@@ -1,4 +1,4 @@
-from Fizz_buzz import Node, binary_tree, FizzBuzzTree
+from Fizz_buzz import Node, binary_tree, FizzBuzzTree ,fizzBuzz
 
 
 
@@ -16,3 +16,19 @@ def test_fizzbuzz():
     expected = ['Fizz','FizzBuzz','8','Buzz','Fizz','11','Buzz','Fizz','4']
     actual = FizzBuzzTree(bt)
     assert expected == actual
+
+
+
+def test_fizzbuzz1():
+    bt = binary_tree()
+    bt.root = Node(0)
+    bt.root.left = Node(15)
+    expected = ['FizzBuzz','FizzBuzz']
+    actual = FizzBuzzTree(bt)
+    assert expected == actual
+
+
+
+
+    
+    

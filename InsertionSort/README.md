@@ -5,6 +5,7 @@
 
 ## Challenge
 - Function returns sorted list with insertion_sort.
+## PR :[LINK](https://github.com/hind-hb/data-structures-and-algorithms2/pull/21/commits/70a58f2378cc73c6ec6f783032a7a46ea9787203)
 
 ## Approach & Efficiency
 I've seen a lot of examples and explanations on how the code works, but there are some gaps that I need to fill. I used youtube to help me close those gaps and I was able to explain my thought process through the blog.

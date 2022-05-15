@@ -242,4 +242,4 @@ We repeat the operation until 15 is in the correct index,
 
 Now that we have exhausted the number of iterations, we return the sorted array.
 
-Big thanks to **Derrick Sherrill** for explaining it this way. The algorithm he used makes a lot of sense to me. You can watch his explanation of his code [here](https://www.youtube.com/watch?v=byHi41L9vTM&list=LL&index=1).
+

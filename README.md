@@ -1,8 +1,9 @@
 # data-structures-and-algorithms2
-## Code Challenge 3:
-Binary Search
-## Challenge:
-Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
-## Approach & Methodology:
+| Reading  | Link | 
+| ------------- | ------------- |
+| Insertion Sort |[Link](https://github.com/hind-hb/data-structures-and-algorithms2/blob/Insertion_Sort/InsertionSort/README.md)|
+| Merge Sort |[Link](https://github.com/hind-hb/data-structures-and-algorithms2/blob/Insertion_Sort/InsertionSort/README.md)|
+
+
 
 

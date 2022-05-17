@@ -8,8 +8,11 @@ Merge sort works by splitting the input list into two halves, repeating the proc
 
 ## Approach & Efficiency
 Time: O(n.logn)
+
 Because the list is being split in log(n) calls and the merging process takes linear time in each call.
+
 Space: O(1)
+
 This list is being sorted in place, keeping the space at constant O(1).
 
 ## PR : [Link](https://github.com/hind-hb/data-structures-and-algorithms2/pull/22/commits/9df98f20f9930bdaa1af36bf47c4ece0f4b06a27)

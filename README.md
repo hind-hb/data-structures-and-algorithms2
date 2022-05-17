@@ -6,7 +6,7 @@
 |Tree Breadth  | [LINK](https://github.com/hind-hb/data-structures-and-algorithms2/blob/tree-breadth-first/Trees/README.md)  |
 |tree-fizz-buzz|[LINK](https://github.com/hind-hb/data-structures-and-algorithms2/blob/tree-fizz-buzz/Tree-Fizz-buzz/README.md)|
 | Insertion Sort |[Link](https://github.com/hind-hb/data-structures-and-algorithms2/blob/Insertion_Sort/InsertionSort/README.md)|
-| Merge Sort |[Link](https://github.com/hind-hb/data-structures-and-algorithms2/blob/Insertion_Sort/InsertionSort/README.md)|
+| Merge Sort |[Link](https://github.com/hind-hb/data-structures-and-algorithms2/blob/mergeSort/MergeSort/README.md)|
 
 
 

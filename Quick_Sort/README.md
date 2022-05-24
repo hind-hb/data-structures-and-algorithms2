@@ -1,7 +1,7 @@
 # Code Challenge 28
 
 ## Quick Sort
-
+## PR : [LINK](https://github.com/hind-hb/data-structures-and-algorithms2/pull/25/commits/d04e3fd7179733ba359afab8b81735ef73defbe0)
   
 ## Challenge Summary
   * Provide a visual step through for each of the sample arrays based on the provided pseudo code.

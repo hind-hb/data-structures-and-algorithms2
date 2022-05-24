@@ -8,6 +8,7 @@
   * Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.
   
 ## Whiteboard Process
+![code-challange-32](https://user-images.githubusercontent.com/75991604/170139654-83882311-c877-4597-ab85-153a0b546303.png)
 
 
 ## Approach & Efficiency

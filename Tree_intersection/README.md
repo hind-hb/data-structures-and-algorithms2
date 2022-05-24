@@ -1,6 +1,6 @@
 # Code Challenge 32
 
-## Hashmap Tree Intersection
+##  Tree Intersection
   * Find common values in 2 binary trees.
   
 ## Challenge Summary

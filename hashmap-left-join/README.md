@@ -1,6 +1,4 @@
-# Code Challenge 33
-
-## Hashmap Left Join
+# Code Challenge 33 : Hashmap Left Join
   
   
 ## Challenge Summary
@@ -16,10 +14,11 @@
     - If no values exist in the right hashmap, then some flavor of NULL should be appended to the result row.
   
 ## Whiteboard Process
+![code-challange-33](https://user-images.githubusercontent.com/75991604/170965234-a002bf5c-33a0-4c69-86c8-9e04d84cb379.png)
 
 
 ## Approach & Efficiency
   * Time: O(n)
   * Space: O(n)
   
-## PR :[LINK]()
+## PR :[LINK](https://github.com/hind-hb/data-structures-and-algorithms2/pull/27/commits/8d2b282d913d7400c4d9a7145cf264624e205f04)

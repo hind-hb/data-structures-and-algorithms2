@@ -1,28 +1,53 @@
-from tree_intersection.intersection import binary_tree,  tree_intersection , Node
+
+from tree_intersection.HashTab import *
+from tree_intersection.BinaryTree import *
+from tree_intersection.intersection import hash_map_tree_intersection
+
+
+
 
 def test_tree_intersection():
-    tree_one = Node(150)
-    tree_one.left = Node(100)
-    tree_one.left.left = Node(75)
-    tree_one.left.right = Node(160)
-    tree_one.left.right.left = Node(125)
-    tree_one.left.right.right = Node(175)
-    tree_one.right = Node(250)
-    tree_one.right.left = Node(200)
-    tree_one.right.right = Node(350)
-    tree_one.right.right.left = Node(300)
-    tree_one.right.right.right = Node(500)
-    binary_tree_one = binary_tree(tree_one)
-    tree_two = Node(42)
-    tree_two.left = Node(100)
-    tree_two.left.left = Node(15)
-    tree_two.left.right = Node(160)
-    tree_two.left.right.left = Node(125)
-    tree_two.left.right.right = Node(175)
-    tree_two.right = Node(600)
-    tree_two.right.left = Node(200)
-    tree_two.right.right = Node(350)
-    tree_two.right.right.left = Node(4)
-    tree_two.right.right.right = Node(500)
-    binary_tree_two = binary_tree(tree_two)
-    assert tree_intersection(binary_tree_one,binary_tree_two) == [100, 160, 125, 175, 200, 350, 500]
+    tree1=BinaryTree()
+    root1=Node(100)
+    root1.left=Node(200)
+    root1.left.left=Node(300)
+    root1.left.right=Node(400)
+    root1.right=Node(500)
+    root1.right.left=Node(600)
+    tree1.root=root1
+
+    tree2=BinaryTree()
+    root=Node(100)
+    root.left=Node(500)
+    root.left.left=Node(1000)
+    root.left.right=Node(600)
+    root.right=Node(687)
+    root.right.left=Node(7689)
+    root.right.left.left=Node(300)
+
+    tree2.root=root
+
+    assert hash_map_tree_intersection(tree1,tree2)==[500,600,100,300]
+
+def test_tree_intersection_if_no_intersection():
+    tree1=BinaryTree()
+    root1=Node(10570)
+    root1.left=Node(20089)
+    root1.left.left=Node(30980)
+    root1.left.right=Node(49800)
+    root1.right=Node(50890)
+    root1.right.left=Node(60090)
+    tree1.root=root1
+
+    tree2=BinaryTree()
+    root=Node(100)
+    root.left=Node(500)
+    root.left.left=Node(1000)
+    root.left.right=Node(600)
+    root.right=Node(687)
+    root.right.left=Node(7689)
+    root.right.left.left=Node(300)
+
+    tree2.root=root
+
+    assert hash_map_tree_intersection(tree1,tree2)==[]

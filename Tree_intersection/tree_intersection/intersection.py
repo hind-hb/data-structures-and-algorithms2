@@ -95,10 +95,10 @@ class HashTable:
 
 def hash_map_tree_intersection(tree1,tree2):
     arr=[]
-    # arr=tree1.in_order(tree1.root)
+    
     print(tree1.root)
     arr1=tree2.in_order(tree2.root)
-    # print(arr)
+    
     hash=HashTable()
     print(tree1.root.value)
     def convert_tree_to_hash(root):
@@ -122,24 +122,24 @@ def hash_map_tree_intersection(tree1,tree2):
 
 
 
-tree1=BinaryTree()
-root1=Node(100)
-root1.left=Node(200)
-root1.left.left=Node(300)
-root1.left.right=Node(400)
-root1.right=Node(500)
-root1.right.left=Node(600)
-tree1.root=root1
+# tree1=BinaryTree()
+# root1=Node(100)
+# root1.left=Node(200)
+# root1.left.left=Node(300)
+# root1.left.right=Node(400)
+# root1.right=Node(500)
+# root1.right.left=Node(600)
+# tree1.root=root1
 
-tree2=BinaryTree()
-root=Node(100)
-root.left=Node(500)
-root.left.left=Node(1000)
-root.left.right=Node(600)
-root.right=Node(687)
-root.right.left=Node(7689)
-root.right.left.left=Node(300)
+# tree2=BinaryTree()
+# root=Node(100)
+# root.left=Node(500)
+# root.left.left=Node(1000)
+# root.left.right=Node(600)
+# root.right=Node(687)
+# root.right.left=Node(7689)
+# root.right.left.left=Node(300)
 
-tree2.root=root
-# print(tree1.in_order(root1))
-print(hash_map_tree_intersection(tree1,tree2))
+# tree2.root=root
+# # print(tree1.in_order(root1))
+# print(hash_map_tree_intersection(tree1,tree2))

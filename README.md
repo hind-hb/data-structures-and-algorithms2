@@ -12,6 +12,7 @@
 | Hash Tabel |[LInk](https://github.com/hind-hb/data-structures-and-algorithms2/blob/hashtable/HashTab/README.md)
 | Hash Map   |[LINK](https://github.com/hind-hb/data-structures-and-algorithms2/blob/hashmap-repeated-word/Hashmap/README.md)
 | Hash Map Left Join|[LINK](https://github.com/hind-hb/data-structures-and-algorithms2/blob/hashmap-left-join/hashmap-left-join/README.md)
+|Graph | [Link](https://github.com/hind-hb/data-structures-and-algorithms2/blob/Graph/graph/README.md)
 
 
 
